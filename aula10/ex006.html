@@ -20,10 +20,29 @@
 </head>
 
 <body>
-   <div id="area">
+   <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
       Interaja...
    </div>
 
+   <script>
+      var a = window.document.getElementById('area')
+
+      function clicar() {
+         a.innerText = 'Clicou!'
+         a.style.background = 'lightcoral'
+      }
+
+      function entrar() {
+         a.innerText = 'Entrou!'
+         a.style.background = 'lightblue'
+      }
+
+      function sair() {
+         a.innerText = 'Saiu!'
+         a.style.background = 'plum'
+      }
+
+   </script>
 </body>
 
 </html>
